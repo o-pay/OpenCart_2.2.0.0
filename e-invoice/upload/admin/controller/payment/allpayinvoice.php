@@ -203,7 +203,7 @@ class ControllerPaymentallPayInvoice extends Controller
 				// 2.取出開立相關參數
 				
 				// *連線資訊
-				//$sAllpayinvoice_Url_Issue	= 'http://einvoice-stage.allpay.com.tw/Invoice/Issue';		// 一般開立網址
+				//$sAllpayinvoice_Url_Issue	= 'http://einvoice-stage.opay.tw/Invoice/Issue';		// 一般開立網址
 				$sAllpayinvoice_Url_Issue	= $this->config->get('allpayinvoice_url');			// 一般開立網址
 				$nAllpayinvoice_Mid 		= $this->config->get('allpayinvoice_mid') ;			// 廠商代號
 				$sAllpayinvoice_Hashkey 	= $this->config->get('allpayinvoice_hashkey');			// 金鑰
@@ -509,7 +509,7 @@ class ControllerPaymentallPayInvoice extends Controller
 		$this->db->query("INSERT INTO `" . DB_PREFIX . "setting` SET `store_id` = 0 , `" . $sFieldName . "` = 'allpayinvoice' , `key` = 'allpayinvoice_hashiv' , `value` = 'q9jcZX8Ib9LM8wYk';");
 		$this->db->query("INSERT INTO `" . DB_PREFIX . "setting` SET `store_id` = 0 , `" . $sFieldName . "` = 'allpayinvoice' , `key` = 'allpayinvoice_autoissue' , `value` = '0';");
 		$this->db->query("INSERT INTO `" . DB_PREFIX . "setting` SET `store_id` = 0 , `" . $sFieldName . "` = 'allpayinvoice' , `key` = 'allpayinvoice_status' , `value` = '0';");
-		$this->db->query("INSERT INTO `" . DB_PREFIX . "setting` SET `store_id` = 0 , `" . $sFieldName . "` = 'allpayinvoice' , `key` = 'allpayinvoice_url' , `value` = 'https://einvoice-stage.allpay.com.tw/Invoice/Issue';");
+		$this->db->query("INSERT INTO `" . DB_PREFIX . "setting` SET `store_id` = 0 , `" . $sFieldName . "` = 'allpayinvoice' , `key` = 'allpayinvoice_url' , `value` = 'https://einvoice-stage.opay.tw/Invoice/Issue';");
 	}
 	
 	public function uninstall() 

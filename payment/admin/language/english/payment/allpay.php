@@ -4,7 +4,7 @@
 $_['heading_title'] = 'O\'Pay Integration Payment';
 
 // Text
-$_['text_allpay'] = '<a href="https://www.allpay.com.tw/" target="_blank"><img src="view/image/payment/opay.png" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_allpay'] = '<a href="https://www.opay.tw/" target="_blank"><img src="view/image/payment/opay.png" style="border: 1px solid #EEEEEE;" /></a>';
 // admin/controller/payment/allpay.php:30
 $_['allpay_text_success'] = $_['heading_title'] . ' : You have modified O\'Pay payment module!';
 // admin/controller/payment/allpay.php:81

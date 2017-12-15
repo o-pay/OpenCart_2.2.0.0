@@ -66,10 +66,10 @@ class ControllerPaymentAllpay extends Controller {
 						$service_url = '';
 						$aio->MerchantID = $this->config->get('allpay_merchant_id');
 						if ($this->model_payment_allpay->isTestMode($aio->MerchantID)) {
-							$service_url = 'https://payment-stage.allpay.com.tw/Cashier/AioCheckOut/V4';
+							$service_url = 'https://payment-stage.opay.tw/Cashier/AioCheckOut/V4';
 							$aio->Send['MerchantTradeNo'] = date('YmdHis');
 						} else {
-							$service_url = 'https://payment.allpay.com.tw/Cashier/AioCheckOut/V4';
+							$service_url = 'https://payment.opay.tw/Cashier/AioCheckOut/V4';
 						}
 						$aio->HashKey = $this->config->get('allpay_hash_key');
 						$aio->HashIV = $this->config->get('allpay_hash_iv');
